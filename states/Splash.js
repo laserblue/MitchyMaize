@@ -77,6 +77,6 @@ Splash.prototype = {
 
     setTimeout(function () {
       game.state.start("GameMenu");
-    }, 1000);
+    }, 100);
   }
 };
