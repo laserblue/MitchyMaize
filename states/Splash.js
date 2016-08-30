@@ -21,7 +21,7 @@ Splash.prototype = {
   // varios freebies found from google image search
   loadImages: function () {
     game.load.image('menu-bg', 'assets/images/menu-bg.jpg');
-    game.load.image('options-bg', 'assets/images/options-bg.jpg');
+    game.load.image('options-bg', 'assets/images/'800px-Maize_diversity_in_Vavilovs_office_(3421259242).jpg');
     game.load.image('gameover-bg', 'assets/images/gameover-bg.jpg');
   },
 
