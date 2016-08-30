@@ -6,8 +6,6 @@ function preload() {
  // game.load.tilemap('map', 'assets/tilemaps/csv/fieldtilled.csv', null, Phaser.Tilemap.CSV); 
  // game.load.tilemap('map', 'assets/tilemaps/csv/fieldmarked.csv', null, Phaser.Tilemap.CSV);
     game.load.tilemap('map', 'assets/tilemaps/csv/field.csv', null, Phaser.Tilemap.CSV);
- // game.load.tilemap('map', 'assets/tilemaps/csv/catastrophi_level2.csv', null, Phaser.Tilemap.CSV);
- // game.load.image('tiles', 'assets/tilemaps/tiles/catastrophi_tiles_16.png');
     game.load.image('tiles', 'assets/tilemaps/tiles/FieldSoil.png');
 }
 
