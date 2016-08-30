@@ -22,7 +22,7 @@ Splash.prototype = {
   loadImages: function () {
     game.load.image('menu-bg', 'assets/images/menu-bg.jpg');
     game.load.image('options-bg', 'assets/images/800px-Maize_diversity_in_Vavilovs_office_(3421259242).jpg');
-    game.load.image('gameover-bg', 'assets/images/gameover-bg.jpg');
+    game.load.image('gameover-bg', 'assets/images/800px-Épône_-_récolte_du_maïs01.jpg');
   },
 
   loadFonts: function () {
