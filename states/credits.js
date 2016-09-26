@@ -50,11 +50,11 @@ Credits.prototype = {
   },
 
   create: function () {
-    this.stage.disableVisibilityChange = true;
+    this.stage.disableVisibilityChange = false;
     if (gameOptions.playMusic) {
-      musicPlayer.stop();
-      musicPlayer = game.add.audio('exit');
-      musicPlayer.play();
+        musicPlayer.stop();
+        musicPlayer = game.add.audio('exit');
+        musicPlayer.play();
     }
     var bg = game.add.sprite(0, 0, 'gameover-bg');
     this.addCredit('Music', 'Kevin Macleod');
