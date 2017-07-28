@@ -38,7 +38,7 @@ GameMenu.prototype = {
       game.state.start("Options");
     });
     this.addMenuOption('Credits', function () {
-      game.state.start("Credits");
+      game.state.start("credits");
     });
   }
 };
