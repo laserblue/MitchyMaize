@@ -55,7 +55,7 @@ Credits.prototype = {
         musicPlayer.stop();
         musicPlayer = game.add.audio('exit');
         musicPlayer.play();
-    },
+    }
     var bg = game.add.sprite(0, 0, 'gameover-bg');
     this.addCredit('Music', 'Kevin Macleod');
     this.addCredit('Developer', 'Matt McFarland');
