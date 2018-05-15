@@ -13,7 +13,7 @@ var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'game'),
 Main.prototype = {
 
   preload: function () {
-    game.load.image('stars', 'assets/images/lossy-page1-800px-NRCSOH07012_-_Ohio_(717402)(NRCS_Photo_Gallery).tif.jpg');
+    game.load.image('stars', 'assets/Images/ExteriorBldg2.png');
     game.load.image('loading', 'assets/images/loading.png');
     game.load.image('brand', 'assets/images/Envelope_astroid.svg.png');
     game.load.script('polyfill', 'lib/polyfill.js');
