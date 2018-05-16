@@ -2,7 +2,7 @@ var Game = function(game) {};
 
 Game.prototype = {
 
-  preload: function () {
+  preload: function() {
     this.optionCount = 1;
   },
 
@@ -33,9 +33,20 @@ Game.prototype = {
 
   },
 
-  create: function () {
+  
+var map;
+var layer;
+var cursors; 
+  
+  create: function() {
     this.stage.disableVisibilityChange = false;
-    game.add.sprite(0, 0, 'stars');
+    map = game.add.tilemap('map', 32, 32); 
+    map.addTilesetImage('tiles');
+    layer = map.createLayer(0); 
+    layer.resizeWorld(); 
+  
+  // game.add.sprite(0, 0, 'stars');
+  
     this.addMenuOption('Next ->', function (e) {
       this.game.state.start("GameOver");
     });
