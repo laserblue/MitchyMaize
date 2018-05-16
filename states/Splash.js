@@ -79,7 +79,7 @@ Splash.prototype = {
     music.play();
   },
 
-  create: function() {
+  create: function () {
     this.status.setText('Ready!');
     this.addGameStates();
     this.addGameMusic();
