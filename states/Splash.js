@@ -23,8 +23,19 @@ Splash.prototype = {
     game.load.image('menu-bg', 'assets/images/800px-Corn_Field.JPG');
     game.load.image('options-bg', 'assets/images/800px-Maize_diversity_in_Vavilovs_office_(3421259242).jpg');
     game.load.image('gameover-bg', 'assets/images/800px-Épône_-_récolte_du_maïs01.jpg');
+    
+    game.load.image('tiles', 'assets/images/FieldSoil.png');  
+  
+    game.load.spritesheet('player','assets/images/rpg_sprite_walk.png',24, 32, 32); 
+  
+    // Add loadGameMaps 
+    game.load.tilemap('map', 'assets/images/fieldmarked.csv', null, Phaser.Tilemap.CSV); 
   },
 
+  
+ 
+  
+  
   loadFonts: function () {
     WebFontConfig = {
       custom: {
