@@ -30,9 +30,10 @@ Splash.prototype = {
   
     // Add loadGameMaps 
     game.load.tilemap('map', 'assets/images/fieldmarked.csv', null, Phaser.Tilemap.CSV); 
+  */
   },
 
- */
+ 
     
   loadFonts: function () {
     WebFontConfig = {
