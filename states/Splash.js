@@ -26,16 +26,13 @@ Splash.prototype = {
     
     game.load.image('tiles', 'assets/images/FieldSoil.png');  
   
-    game.load.spritesheet('player','assets/images/rpg_sprite_walk.png',24, 32, 32); 
+    game.load.spritesheet('player', 'assets/images/rpg_sprite_walk.png', 24, 32, 32); 
   
     // Add loadGameMaps 
     game.load.tilemap('map', 'assets/images/fieldmarked.csv', null, Phaser.Tilemap.CSV); 
   },
 
-  
- 
-  
-  
+       
   loadFonts: function () {
     WebFontConfig = {
       custom: {
