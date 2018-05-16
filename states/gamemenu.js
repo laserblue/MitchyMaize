@@ -1,4 +1,4 @@
-var GameMenu = function() {};
+var GameMenu = function () {};
 
 
 GameMenu.prototype = {
