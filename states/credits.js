@@ -2,7 +2,7 @@ var Credits = function(game) {};
 
 Credits.prototype = {
 
-  preload: function () {
+  preload: function() {
     this.optionCount = 1;
     this.creditCount = 0;
 
@@ -49,7 +49,7 @@ Credits.prototype = {
     this.optionCount ++;
   },
 
-  create: function () {
+  create: function() {
     this.stage.disableVisibilityChange = false;
     if (gameOptions.playMusic) {
         musicPlayer.stop();
