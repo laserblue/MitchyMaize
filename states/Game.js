@@ -34,18 +34,18 @@ Game.prototype = {
   },
 
   
- /* var map;
+  var map;
   var layer;
   var cursors; 
-  */
+  
   create: function () {
     this.stage.disableVisibilityChange = false;
- /*
+ 
     map = game.add.tilemap('map', 32, 32); 
     map.addTilesetImage('tiles');
     layer = map.createLayer(0); 
     layer.resizeWorld(); 
-  */
+  
     game.add.sprite(0, 0, 'stars');
   
     this.addMenuOption('Next ->', function (e) {
