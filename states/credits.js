@@ -1,4 +1,4 @@
-var Credits = function (game) {};
+var Credits = function(game) {};
 
 Credits.prototype = {
 
@@ -8,7 +8,7 @@ Credits.prototype = {
 
   },
 
-  addCredit: function (task, author) {
+  addCredit: function(task, author) {
     var authorStyle = { font: '40pt TheMinion', fill: 'white', align: 'center', stroke: 'rgba(0,0,0,0)', strokeThickness: 4};
     var taskStyle = { font: '30pt TheMinion', fill: 'white', align: 'center', stroke: 'rgba(0,0,0,0)', strokeThickness: 4};
     var authorText = game.add.text(game.world.centerX, 900, author, authorStyle);
@@ -24,7 +24,7 @@ Credits.prototype = {
     this.creditCount ++;
   },
 
-  addMenuOption: function (text, callback) {
+  addMenuOption: function(text, callback) {
     var optionStyle = { font: '30pt TheMinion', fill: 'white', align: 'left', stroke: 'rgba(0,0,0,0)', strokeThickness: 4};
     var txt = game.add.text(10, (this.optionCount * 80) + 450, text, optionStyle);
 
@@ -35,7 +35,7 @@ Credits.prototype = {
       target.stroke = "rgba(200,200,200,0.5)";
       txt.useHandCursor = true;
     };
-    var onOut = function (target) {
+    var onOut = function(target) {
       target.fill = "white";
       target.stroke = "rgba(0,0,0,0)";
       txt.useHandCursor = false;
