@@ -1,14 +1,14 @@
-var Credits = function(game) {};
+var Credits = function (game) {};
 
 Credits.prototype = {
 
-  preload: function() {
+  preload: function () {
     this.optionCount = 1;
     this.creditCount = 0;
 
   },
 
-  addCredit: function(task, author) {
+  addCredit: function (task, author) {
     var authorStyle = { font: '40pt TheMinion', fill: 'white', align: 'center', stroke: 'rgba(0,0,0,0)', strokeThickness: 4};
     var taskStyle = { font: '30pt TheMinion', fill: 'white', align: 'center', stroke: 'rgba(0,0,0,0)', strokeThickness: 4};
     var authorText = game.add.text(game.world.centerX, 900, author, authorStyle);
@@ -24,7 +24,7 @@ Credits.prototype = {
     this.creditCount ++;
   },
 
-  addMenuOption: function(text, callback) {
+  addMenuOption: function (text, callback) {
     var optionStyle = { font: '30pt TheMinion', fill: 'white', align: 'left', stroke: 'rgba(0,0,0,0)', strokeThickness: 4};
     var txt = game.add.text(10, (this.optionCount * 80) + 450, text, optionStyle);
 
@@ -49,7 +49,7 @@ Credits.prototype = {
     this.optionCount ++;
   },
 
-  create: function() {
+  create: function () {
     this.stage.disableVisibilityChange = false;
     if (gameOptions.playMusic) {
         musicPlayer.stop();
