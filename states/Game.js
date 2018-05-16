@@ -34,9 +34,9 @@ Game.prototype = {
   },
 
   
-var map;
-var layer;
-var cursors; 
+  var map;
+  var layer;
+  var cursors; 
   
   create: function() {
     this.stage.disableVisibilityChange = false;
