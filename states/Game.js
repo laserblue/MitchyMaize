@@ -1,8 +1,8 @@
-var Game = function(game) {};
+var Game = function (game) {};
 
 Game.prototype = {
 
-  preload: function() {
+  preload: function () {
     this.optionCount = 1;
   },
 
@@ -38,7 +38,7 @@ Game.prototype = {
   var layer;
   var cursors; 
   */
-  create: function() {
+  create: function () {
     this.stage.disableVisibilityChange = false;
  /*
     map = game.add.tilemap('map', 32, 32); 
