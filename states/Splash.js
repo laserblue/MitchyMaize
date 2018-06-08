@@ -22,8 +22,9 @@ Splash.prototype = {
   loadImages: function () {
     game.load.image('menu-bg', 'assets/images/800px-Corn_Field.JPG');
     game.load.image('options-bg', 'assets/images/800px-Maize_diversity_in_Vavilovs_office_(3421259242).jpg');
-    game.load.image('gameover-bg', 'assets/images/800px-Épône_-_récolte_du_maïs01.jpg');
- /*   
+    game.load.image('gameover-bg', 'assets/images/.jpg');
+    game.load.image('credits-bg', 'assets/images/800px-Épône_-_récolte_du_maïs01.jpg');
+    /*   
     game.load.image('tiles', 'assets/images/FieldSoil.png');  
   
     game.load.spritesheet('player', 'assets/images/rpg_sprite_walk.png', 24, 32, 32); 
