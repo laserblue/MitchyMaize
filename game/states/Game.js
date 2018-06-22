@@ -7,19 +7,19 @@ Game.prototype = {
   },
 
   addMenuOption: function(text, callback) {
-    var optionStyle = { font: '30pt TheMinion', fill: 'white', align: 'left', stroke: 'rgba(0,0,0,0)', srokeThickness: 4};
-    var txt = game.add.text(game.world.centerX, (this.optionCount * 80) + 200, text, optionStyle);
+    var optionStyle = { font: '30pt TheMinion', fill: 'Blue', align: 'left', stroke: 'rgba(0,0,0,0)', strokeThickness: 4};
+    var txt = game.add.text(game.world.centerX, (this.optionCount * 80) + 400, text, optionStyle);
     txt.anchor.setTo(0.5);
-    txt.stroke = "rgba(0,0,0,0";
+    txt.stroke = "rgba(255,0,0,0)";
     txt.strokeThickness = 4;
-    var onOver = function (target) {
-      target.fill = "#FEFFD5";
-      target.stroke = "rgba(200,200,200,0.5)";
+    var onOver = function(target) {
+      target.fill = "#FF0000";
+      target.stroke = "rgba(200,0,50,0.5)";
       txt.useHandCursor = true;
     };
-    var onOut = function (target) {
-      target.fill = "white";
-      target.stroke = "rgba(0,0,0,0)";
+    var onOut = function(target) {
+      target.fill = "green";
+      target.stroke = "rgba(0,0,255,0)";
       txt.useHandCursor = false;
     };
     //txt.useHandCursor = true;
@@ -35,7 +35,21 @@ Game.prototype = {
 
   create: function () {
     this.stage.disableVisibilityChange = false;
-    game.add.sprite(0, 0, 'stars');
+   // game.add.sprite(0, 0, 'title');
+  
+    title = this.game.add.sprite(400, 200,'title');
+        title.anchor.setTo(0.5,0.5);
+
+    instructions = game.add.sprite(600, 200,'instructions');
+        instructions.scale.x = 0.5;
+        instructions.scale.y = 0.5;
+/*
+        // Start Message
+
+        var clickText = this.game.add.bitmapText(Game.w/2, Game.h/2+50, 'minecraftia', '~click to start~', 24).anchor.setTo(0.5); 
+
+    },
+    */
     this.addMenuOption('Next ->', function (e) {
       this.game.state.start("GameOver");
     });
